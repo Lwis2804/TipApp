@@ -13,6 +13,14 @@
 		AABFD1B02B446DD50089B995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AABFD1AE2B446DD50089B995 /* Main.storyboard */; };
 		AABFD1B22B446DD90089B995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AABFD1B12B446DD90089B995 /* Assets.xcassets */; };
 		AABFD1B52B446DD90089B995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AABFD1B32B446DD90089B995 /* LaunchScreen.storyboard */; };
+		AABFD1BE2B446E640089B995 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABFD1BD2B446E640089B995 /* Extensions.swift */; };
+		AABFD1C62B446F150089B995 /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABFD1C42B446F150089B995 /* TipCalculatorViewController.swift */; };
+		AABFD1C72B446F150089B995 /* TipCalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABFD1C52B446F150089B995 /* TipCalculatorViewController.xib */; };
+		AABFD1CB2B44718D0089B995 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABFD1C92B44718D0089B995 /* CalculatorViewController.swift */; };
+		AABFD1CC2B44718D0089B995 /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABFD1CA2B44718D0089B995 /* CalculatorViewController.xib */; };
+		AABFD1D02B4471E30089B995 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABFD1CE2B4471E30089B995 /* SettingsViewController.swift */; };
+		AABFD1D12B4471E30089B995 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABFD1CF2B4471E30089B995 /* SettingsViewController.xib */; };
+		AABFD1D52B4474700089B995 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABFD1D42B4474700089B995 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		AABFD1B12B446DD90089B995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AABFD1B42B446DD90089B995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AABFD1B62B446DD90089B995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AABFD1BD2B446E640089B995 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AABFD1C42B446F150089B995 /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
+		AABFD1C52B446F150089B995 /* TipCalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipCalculatorViewController.xib; sourceTree = "<group>"; };
+		AABFD1C92B44718D0089B995 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		AABFD1CA2B44718D0089B995 /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
+		AABFD1CE2B4471E30089B995 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AABFD1CF2B4471E30089B995 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		AABFD1D42B4474700089B995 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,9 @@
 		AABFD1A72B446DD50089B995 /* TipApp */ = {
 			isa = PBXGroup;
 			children = (
+				AABFD1BC2B446E4F0089B995 /* Extensions */,
+				AABFD1BF2B446E8C0089B995 /* TapBarController */,
+				AABFD1C22B446ED20089B995 /* Views */,
 				AABFD1A82B446DD50089B995 /* AppDelegate.swift */,
 				AABFD1AA2B446DD50089B995 /* SceneDelegate.swift */,
 				AABFD1AC2B446DD50089B995 /* ViewController.swift */,
@@ -65,6 +84,59 @@
 				AABFD1B62B446DD90089B995 /* Info.plist */,
 			);
 			path = TipApp;
+			sourceTree = "<group>";
+		};
+		AABFD1BC2B446E4F0089B995 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AABFD1BD2B446E640089B995 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AABFD1BF2B446E8C0089B995 /* TapBarController */ = {
+			isa = PBXGroup;
+			children = (
+				AABFD1D42B4474700089B995 /* TabBarViewController.swift */,
+			);
+			path = TapBarController;
+			sourceTree = "<group>";
+		};
+		AABFD1C22B446ED20089B995 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AABFD1C32B446EDD0089B995 /* TipCalculatorView */,
+				AABFD1C82B446F1A0089B995 /* CalculatorView */,
+				AABFD1CD2B44719A0089B995 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AABFD1C32B446EDD0089B995 /* TipCalculatorView */ = {
+			isa = PBXGroup;
+			children = (
+				AABFD1C42B446F150089B995 /* TipCalculatorViewController.swift */,
+				AABFD1C52B446F150089B995 /* TipCalculatorViewController.xib */,
+			);
+			path = TipCalculatorView;
+			sourceTree = "<group>";
+		};
+		AABFD1C82B446F1A0089B995 /* CalculatorView */ = {
+			isa = PBXGroup;
+			children = (
+				AABFD1C92B44718D0089B995 /* CalculatorViewController.swift */,
+				AABFD1CA2B44718D0089B995 /* CalculatorViewController.xib */,
+			);
+			path = CalculatorView;
+			sourceTree = "<group>";
+		};
+		AABFD1CD2B44719A0089B995 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AABFD1CE2B4471E30089B995 /* SettingsViewController.swift */,
+				AABFD1CF2B4471E30089B995 /* SettingsViewController.xib */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AABFD1B52B446DD90089B995 /* LaunchScreen.storyboard in Resources */,
+				AABFD1D12B4471E30089B995 /* SettingsViewController.xib in Resources */,
 				AABFD1B22B446DD90089B995 /* Assets.xcassets in Resources */,
+				AABFD1C72B446F150089B995 /* TipCalculatorViewController.xib in Resources */,
 				AABFD1B02B446DD50089B995 /* Main.storyboard in Resources */,
+				AABFD1CC2B44718D0089B995 /* CalculatorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +213,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AABFD1D52B4474700089B995 /* TabBarViewController.swift in Sources */,
 				AABFD1AD2B446DD50089B995 /* ViewController.swift in Sources */,
 				AABFD1A92B446DD50089B995 /* AppDelegate.swift in Sources */,
 				AABFD1AB2B446DD50089B995 /* SceneDelegate.swift in Sources */,
+				AABFD1C62B446F150089B995 /* TipCalculatorViewController.swift in Sources */,
+				AABFD1CB2B44718D0089B995 /* CalculatorViewController.swift in Sources */,
+				AABFD1BE2B446E640089B995 /* Extensions.swift in Sources */,
+				AABFD1D02B4471E30089B995 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,6 +374,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +382,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MA.TipApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +405,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +413,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MA.TipApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
