@@ -50,6 +50,7 @@ class CalculatorViewController: UIViewController {
     
     private let kDecimalSeparator = Locale.current.decimalSeparator! // definir separador decimal por pais
     private let kMaxLenght = 9                          // tamanio de numeros a trabajar en pantalla
+    private let kTotal = "total"
     
     private enum operationType {
         case none, addiction, substraction, mutiplication, division, percent
@@ -107,7 +108,16 @@ class CalculatorViewController: UIViewController {
     //MARK: - L I F E . C Y C L E
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.lblComa.setTitle(kDecimalSeparator, for: .normal)
         
+        total = UserDefaults.standard.double(forKey: kTotal)
+        
+        result()
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         self.lblComa.round()
         self.lblNumber0.round()
         self.lblNumber1.round()
@@ -128,11 +138,6 @@ class CalculatorViewController: UIViewController {
         self.lblOperatorDivision.round()
         self.lblOperatorMultiplication.round()
         self.lblOperatorPlusMinus.round()
-        
-        self.lblComa.setTitle(kDecimalSeparator, for: .normal)
-        
-        result()
-
     }
 
 
@@ -168,6 +173,7 @@ class CalculatorViewController: UIViewController {
         }
         operating = true
         operation = .division
+        sender.selectOperation(true)
         sender.shine()
     }
     
@@ -177,6 +183,7 @@ class CalculatorViewController: UIViewController {
         }
         operating = true
         operation = .mutiplication
+        sender.selectOperation(true)
         sender.shine()
 
     }
@@ -187,6 +194,7 @@ class CalculatorViewController: UIViewController {
         }
         operating = true
         operation = .substraction
+        sender.selectOperation(true)
         sender.shine()
     }
     
@@ -196,6 +204,7 @@ class CalculatorViewController: UIViewController {
         }
         operating = true
         operation = .addiction
+        sender.selectOperation(true)
         sender.shine()
     }
     
@@ -212,6 +221,7 @@ class CalculatorViewController: UIViewController {
         
         lblResult.text = (lblResult.text ?? "") + kDecimalSeparator
         deciaml = true
+        selectVisualOperation()
         sender.shine()
     }
     
@@ -243,6 +253,8 @@ class CalculatorViewController: UIViewController {
         temp = Double(currentTemp! + String(number))!
         lblResult.text = printFormatter.string(from: NSNumber(value: temp))
         
+        selectVisualOperation()
+       
         sender.shine()
     
     }
@@ -292,6 +304,8 @@ class CalculatorViewController: UIViewController {
         
         operation = .none
         
+        selectVisualOperation()
+        UserDefaults.standard.set(total, forKey: kTotal)
         print("Total \(total)")
         
     }
