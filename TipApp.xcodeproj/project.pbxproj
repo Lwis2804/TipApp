@@ -21,6 +21,7 @@
 		AABFD1D02B4471E30089B995 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABFD1CE2B4471E30089B995 /* SettingsViewController.swift */; };
 		AABFD1D12B4471E30089B995 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABFD1CF2B4471E30089B995 /* SettingsViewController.xib */; };
 		AABFD1D52B4474700089B995 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABFD1D42B4474700089B995 /* TabBarViewController.swift */; };
+		AADCD5612B4FA89C007DD7E2 /* ExtensionTipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADCD5602B4FA89C007DD7E2 /* ExtensionTipCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		AABFD1CE2B4471E30089B995 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		AABFD1CF2B4471E30089B995 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		AABFD1D42B4474700089B995 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		AADCD5602B4FA89C007DD7E2 /* ExtensionTipCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTipCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				AABFD1C42B446F150089B995 /* TipCalculatorViewController.swift */,
 				AABFD1C52B446F150089B995 /* TipCalculatorViewController.xib */,
+				AADCD5602B4FA89C007DD7E2 /* ExtensionTipCalculator.swift */,
 			);
 			path = TipCalculatorView;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			files = (
 				AABFD1D52B4474700089B995 /* TabBarViewController.swift in Sources */,
 				AABFD1AD2B446DD50089B995 /* ViewController.swift in Sources */,
+				AADCD5612B4FA89C007DD7E2 /* ExtensionTipCalculator.swift in Sources */,
 				AABFD1A92B446DD50089B995 /* AppDelegate.swift in Sources */,
 				AABFD1AB2B446DD50089B995 /* SceneDelegate.swift in Sources */,
 				AABFD1C62B446F150089B995 /* TipCalculatorViewController.swift in Sources */,

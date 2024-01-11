@@ -49,7 +49,7 @@
                         <constraint firstAttribute="height" constant="50" id="nb0-fe-fYp"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="36"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROPINA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWf-G2-vpZ">
                     <rect key="frame" x="16" y="119" width="100" height="21"/>
@@ -82,7 +82,7 @@
                         <segment title="25%"/>
                     </segments>
                     <connections>
-                        <action selector="selectPercent:" destination="-1" eventType="valueChanged" id="rdb-wl-Ojh"/>
+                        <action selector="selectPercent:" destination="-1" eventType="valueChanged" id="pI3-oR-gJA"/>
                     </connections>
                 </segmentedControl>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONAS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSj-C2-5K8">
