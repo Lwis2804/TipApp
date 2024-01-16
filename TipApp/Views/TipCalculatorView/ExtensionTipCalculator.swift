@@ -11,21 +11,18 @@ extension TipCalculatorViewController : UITextFieldDelegate {
     
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        print(range.length)
-        print(range.location)
-        
-        if range.length == 1 {
-            print("El valpor de textfiel es \(textField.text)")
-            print("El valpor de textfiel es \(string)")
-            
-        } else {
-            var recibedAmount : String = (textField.text ?? "") + string
+      if range.length == 1 {
+          var recibedAmount : String = String(textField.text?.dropLast() ?? "")
+          saveValues(withStringAmount: recibedAmount)
+          calculatePercent(withAmount: ingresaCuenta)
+    } else {
+           var recibedAmount : String = (textField.text ?? "") + string
             saveValues(withStringAmount: recibedAmount)
             calculatePercent(withAmount: ingresaCuenta)
         }
         
-        
-        
-        return true
+     
+       return true
     }
 }
+
