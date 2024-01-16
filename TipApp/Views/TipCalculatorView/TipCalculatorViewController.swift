@@ -26,7 +26,7 @@ class TipCalculatorViewController: UIViewController {
     
     var ingresaCuenta : Double = 0
     private var choosePercent : percent = .none
-    private var percentResult : Double = 0
+    var percentResult : Double = 0
     
     private enum percent {
         case none, tenPercent, fifteenPercent, twentyPercent, twentyfivePercent
@@ -52,22 +52,25 @@ class TipCalculatorViewController: UIViewController {
                 choosePercent = .tenPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                break
+                lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+
             case 1:
                 choosePercent = .fifteenPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                break
+                lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+
             case 2:
                 choosePercent = .twentyPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                break
+                lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+
             case 3:
                 choosePercent = .twentyfivePercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                break
+                lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
             default:
                 break
             }

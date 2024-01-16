@@ -12,13 +12,15 @@ extension TipCalculatorViewController : UITextFieldDelegate {
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
       if range.length == 1 {
-          var recibedAmount : String = String(textField.text?.dropLast() ?? "")
+          let recibedAmount : String = String(textField.text?.dropLast() ?? "")
           saveValues(withStringAmount: recibedAmount)
           calculatePercent(withAmount: ingresaCuenta)
+          lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
     } else {
-           var recibedAmount : String = (textField.text ?? "") + string
+           let recibedAmount : String = (textField.text ?? "") + string
             saveValues(withStringAmount: recibedAmount)
             calculatePercent(withAmount: ingresaCuenta)
+        lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
         }
         
      
