@@ -9,22 +9,22 @@ import UIKit
 
 extension TipCalculatorViewController : UITextFieldDelegate {
     
-
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-      if range.length == 1 {
-          let recibedAmount : String = String(textField.text?.dropLast() ?? "")
-          saveValues(withStringAmount: recibedAmount)
-          calculatePercent(withAmount: ingresaCuenta)
-          lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
-    } else {
-           let recibedAmount : String = (textField.text ?? "") + string
+        if range.length == 1 {
+            let recibedAmount : String = String(textField.text?.dropLast() ?? "")
             saveValues(withStringAmount: recibedAmount)
             calculatePercent(withAmount: ingresaCuenta)
-        lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+            lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+        } else {
+            lblPorcentaje.text = "10 %"
+            let recibedAmount : String = (textField.text ?? "") + string
+            saveValues(withStringAmount: recibedAmount)
+            calculatePercent(withAmount: ingresaCuenta)
+            lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+            steperPersonas.isHidden = false
         }
-        
-     
-       return true
+        return true
     }
 }
 
