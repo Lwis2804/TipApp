@@ -106,6 +106,13 @@ class OnePersonTipViewController: UITabBarController {
     }
     
 
-
+    @IBAction func btnLimpiarCuetna(_ sender: Any) {    var ingresaCuenta : Double = Double("") ?? 0.0
+        txtIngresarCuenta.text = String(ingresaCuenta)
+        lblMontoPropinaResult.text = "$\(0.00)"
+        lblMontoTotal.text = "$\(0.00)"
+        segmentedControlPorcentaje.selectedSegmentIndex = 0
+        segmentedControlPorcentaje.selectedSegmentIndex = 1
+    }
+    
 
 }
