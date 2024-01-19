@@ -37,7 +37,6 @@ class TipCalculatorViewController: UIViewController {
         super.viewDidLoad()
         txtIngresarCuenta.delegate = self
         segmentedControlPorcentaje.isHidden = true
-        btnLimpiar.isHidden = true
         steperPersonas.isHidden = true
     }
     
@@ -126,4 +125,16 @@ class TipCalculatorViewController: UIViewController {
         lblMontoPorPersonaResult.text = String(totalPorPersona)
     }
 
+    @IBAction func btnLimpiarAction(_ sender: Any) {
+        var ingresaCuenta : Double = Double("") ?? 0.0
+        txtIngresarCuenta.text = String(ingresaCuenta)
+        lblMontoPropinaResult.text = "$\(0.00)"
+        lblMontoTotal.text = "$\(0.00)"
+        lblMontoPorPersonaResult.text = "$\(0.00)"
+        segmentedControlPorcentaje.selectedSegmentIndex = 0
+        segmentedControlPorcentaje.selectedSegmentIndex = 1
+        lblNoPersonas.text = "\(1)"
+    }
+    
+    
 }

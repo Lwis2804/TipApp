@@ -93,6 +93,9 @@
                             <buttonConfiguration key="configuration" style="gray" title="LIMPIAR">
                                 <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="btnLimpiarCuetna:" destination="-1" eventType="touchUpInside" id="xmO-Yj-JaU"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="ArS-Q4-VaT">
                             <rect key="frame" x="140" y="241" width="160" height="50"/>
@@ -133,7 +136,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="hxZ-EB-5R1" firstAttribute="centerX" secondItem="tN2-cB-Hzh" secondAttribute="centerX" id="23h-tm-jyG"/>
                         <constraint firstItem="fxD-68-yWy" firstAttribute="top" secondItem="oEM-dT-oB5" secondAttribute="bottom" constant="32" id="3v9-Em-snf"/>

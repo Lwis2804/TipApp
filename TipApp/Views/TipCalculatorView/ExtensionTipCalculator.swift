@@ -17,6 +17,7 @@ extension TipCalculatorViewController : UITextFieldDelegate {
             calculatePercent(withAmount: ingresaCuenta)
             lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
             lblMontoPorPersonaResult.text = "$ \(ingresaCuenta + percentResult)"
+            btnLimpiar.isHidden = true
         } else {
             let recibedAmount : String = (textField.text ?? "") + string
             saveValues(withStringAmount: recibedAmount)
@@ -24,6 +25,7 @@ extension TipCalculatorViewController : UITextFieldDelegate {
             lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
             lblMontoPorPersonaResult.text = "$ \(ingresaCuenta + percentResult)"
             steperPersonas.isHidden = false
+            btnLimpiar.isHidden = false
         }
         return true
     }
