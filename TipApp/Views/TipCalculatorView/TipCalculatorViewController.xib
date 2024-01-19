@@ -13,7 +13,10 @@
                 <outlet property="btnLimpiar" destination="YET-Wy-StS" id="PPf-Sg-Dl7"/>
                 <outlet property="imgDivision" destination="tzg-YE-KBe" id="kCy-Tm-qBe"/>
                 <outlet property="lblCuenta" destination="hbf-zk-kwh" id="djl-q6-Stb"/>
+                <outlet property="lblMontoPorPersona" destination="kP7-wf-UkO" id="Il2-Fd-8GG"/>
+                <outlet property="lblMontoPorPersonaResult" destination="CZO-pZ-A6p" id="CF1-XE-erv"/>
                 <outlet property="lblMontoPropinaResult" destination="4nR-Oo-fCu" id="JF5-gH-dWo"/>
+                <outlet property="lblMontoTotal" destination="qIJ-QP-RAb" id="ZNf-Iv-APB"/>
                 <outlet property="lblNoPersonas" destination="COF-re-vea" id="l9f-up-LJF"/>
                 <outlet property="lblPorPersona" destination="nSj-C2-5K8" id="QUO-Nj-krG"/>
                 <outlet property="lblPropina" destination="GWf-G2-vpZ" id="RGA-1J-ZIG"/>
@@ -157,8 +160,8 @@
                     <color key="textColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTO TOTAL " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP7-wf-UkO">
-                    <rect key="frame" x="16" y="438" width="140" height="18"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTO PORPERSONA " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP7-wf-UkO">
+                    <rect key="frame" x="16" y="432" width="140" height="36"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="ioB-Ts-kRF"/>
                     </constraints>
@@ -167,7 +170,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="CZO-pZ-A6p">
-                    <rect key="frame" x="164" y="426" width="140" height="40"/>
+                    <rect key="frame" x="164" y="430" width="140" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="GqG-Yo-2fL"/>
                         <constraint firstAttribute="height" constant="40" id="ldA-xy-fIG"/>
@@ -187,8 +190,8 @@
                 <constraint firstItem="XPF-61-7C1" firstAttribute="top" secondItem="hbf-zk-kwh" secondAttribute="bottom" constant="12" id="8PL-Yn-GgF"/>
                 <constraint firstItem="tzg-YE-KBe" firstAttribute="top" secondItem="qIJ-QP-RAb" secondAttribute="bottom" constant="8" symbolic="YES" id="9Bs-d1-o3V"/>
                 <constraint firstItem="1Fb-l2-SDV" firstAttribute="top" secondItem="6pM-6S-G7b" secondAttribute="bottom" constant="22" id="9ET-CO-2wx"/>
-                <constraint firstItem="CZO-pZ-A6p" firstAttribute="top" secondItem="tzg-YE-KBe" secondAttribute="bottom" constant="26" id="ABO-Sm-x94"/>
-                <constraint firstItem="kP7-wf-UkO" firstAttribute="top" secondItem="tzg-YE-KBe" secondAttribute="bottom" constant="38" id="EPe-hp-7aj"/>
+                <constraint firstItem="CZO-pZ-A6p" firstAttribute="top" secondItem="tzg-YE-KBe" secondAttribute="bottom" constant="30" id="ABO-Sm-x94"/>
+                <constraint firstItem="kP7-wf-UkO" firstAttribute="top" secondItem="tzg-YE-KBe" secondAttribute="bottom" constant="32" id="EPe-hp-7aj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4nR-Oo-fCu" secondAttribute="trailing" constant="16" id="Gu7-WU-444"/>
                 <constraint firstItem="cBE-CE-XjJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Hm2-2F-nRp"/>
                 <constraint firstItem="6pM-6S-G7b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="55" id="K5o-f8-Au6"/>

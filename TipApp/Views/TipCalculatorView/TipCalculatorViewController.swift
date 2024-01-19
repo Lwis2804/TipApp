@@ -9,21 +9,20 @@ class TipCalculatorViewController: UIViewController {
     @IBOutlet weak var lblCuenta: UILabel!
     @IBOutlet weak var txtIngresarCuenta: UITextField!
     @IBOutlet weak var lblPropina: UILabel!
-    @IBOutlet weak var lblPorcentaje: UILabel!
     @IBOutlet weak var segmentedControlPorcentaje: UISegmentedControl!
     @IBOutlet weak var lblPorPersona: UILabel!
     @IBOutlet weak var steperPersonas: UIStepper!{
         didSet{self.steperPersonas.value = 1}
     }
     @IBOutlet weak var lblNoPersonas: UILabel!
-    @IBOutlet weak var segmentedDivision: UISegmentedControl!
     @IBOutlet weak var lblPropinaResult: UILabel!
     @IBOutlet weak var lblMontoPropinaResult: UILabel!
     @IBOutlet weak var imgDivision: UIView!
     @IBOutlet weak var lblTotal: UILabel!
     @IBOutlet weak var lblMontoTotal: UILabel!
     @IBOutlet weak var btnLimpiar: UIButton!
-    
+    @IBOutlet weak var lblMontoPorPersona: UILabel!
+    @IBOutlet weak var lblMontoPorPersonaResult: UILabel!
     //MARK: - V A R I A B L E S
     
     var ingresaCuenta : Double = 0
@@ -37,7 +36,6 @@ class TipCalculatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         txtIngresarCuenta.delegate = self
-        lblPorcentaje.text = "0"
         segmentedControlPorcentaje.isHidden = true
         btnLimpiar.isHidden = true
         steperPersonas.isHidden = true
@@ -85,29 +83,29 @@ class TipCalculatorViewController: UIViewController {
     @IBAction func selectPercent(_ sender: Any) {
             switch segmentedControlPorcentaje.selectedSegmentIndex {
             case 0:
-                lblPorcentaje.text = "10 %"
                 choosePercent = .tenPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
                 lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+                lblMontoPorPersonaResult.text = "$ \(ingresaCuenta + percentResult)"
             case 1:
-                lblPorcentaje.text = "15 %"
                 choosePercent = .fifteenPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
                 lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+                lblMontoPorPersonaResult.text = "$ \(ingresaCuenta + percentResult)"
             case 2:
-                lblPorcentaje.text = "20 %"
                 choosePercent = .twentyPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
                 lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+                lblMontoPorPersonaResult.text = "$ \(ingresaCuenta + percentResult)"
             case 3:
-                lblPorcentaje.text = "25 %"
                 choosePercent = .twentyfivePercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
                 lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+                lblMontoPorPersonaResult.text = "$ \(ingresaCuenta + percentResult)"
             default:
                 break
             }
@@ -115,25 +113,17 @@ class TipCalculatorViewController: UIViewController {
     
 
     @IBAction func addPerson(_ sender: UIStepper) {
+     /*   if sender.value <= 1 {
+            steperPersonas.isHidden = true
+       } else {
+            steperPersonas.isHidden = false
+        } */
         lblNoPersonas.text = "\(Int(sender.value))"
-        var propinaNoPersonas = percentResult / sender.value
-        var totalPorPersona = (ingresaCuenta + percentResult) / sender.value
+        let propinaNoPersonas = percentResult / sender.value
+        let totalPorPersona = (ingresaCuenta + percentResult) / sender.value
         print(sender.value)
         lblMontoPropinaResult.text = String(propinaNoPersonas)
-        lblMontoTotal.text = String(totalPorPersona)
-        
-        
-       /* var counterPersons : Int = 0
-        if sender.isSelected {
-            counterPersons += 1
-        } else if sender.isSelected {
-            counterPersons -= 1
-        } */
-            
+        lblMontoPorPersonaResult.text = String(totalPorPersona)
     }
-    
-  
-    
 
-    
 }
