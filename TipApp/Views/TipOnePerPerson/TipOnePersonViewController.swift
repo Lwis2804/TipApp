@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class TipOnePersonViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

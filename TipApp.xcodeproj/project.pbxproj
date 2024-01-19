@@ -18,8 +18,8 @@
 		AABFD1C72B446F150089B995 /* TipCalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABFD1C52B446F150089B995 /* TipCalculatorViewController.xib */; };
 		AABFD1CB2B44718D0089B995 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABFD1C92B44718D0089B995 /* CalculatorViewController.swift */; };
 		AABFD1CC2B44718D0089B995 /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABFD1CA2B44718D0089B995 /* CalculatorViewController.xib */; };
-		AABFD1D02B4471E30089B995 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABFD1CE2B4471E30089B995 /* SettingsViewController.swift */; };
-		AABFD1D12B4471E30089B995 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABFD1CF2B4471E30089B995 /* SettingsViewController.xib */; };
+		AABFD1D02B4471E30089B995 /* TipOnePersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABFD1CE2B4471E30089B995 /* TipOnePersonViewController.swift */; };
+		AABFD1D12B4471E30089B995 /* TipOnePersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABFD1CF2B4471E30089B995 /* TipOnePersonViewController.xib */; };
 		AABFD1D52B4474700089B995 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABFD1D42B4474700089B995 /* TabBarViewController.swift */; };
 		AADCD5612B4FA89C007DD7E2 /* ExtensionTipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADCD5602B4FA89C007DD7E2 /* ExtensionTipCalculator.swift */; };
 /* End PBXBuildFile section */
@@ -38,8 +38,8 @@
 		AABFD1C52B446F150089B995 /* TipCalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipCalculatorViewController.xib; sourceTree = "<group>"; };
 		AABFD1C92B44718D0089B995 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		AABFD1CA2B44718D0089B995 /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
-		AABFD1CE2B4471E30089B995 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		AABFD1CF2B4471E30089B995 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		AABFD1CE2B4471E30089B995 /* TipOnePersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipOnePersonViewController.swift; sourceTree = "<group>"; };
+		AABFD1CF2B4471E30089B995 /* TipOnePersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipOnePersonViewController.xib; sourceTree = "<group>"; };
 		AABFD1D42B4474700089B995 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		AADCD5602B4FA89C007DD7E2 /* ExtensionTipCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTipCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,9 +107,9 @@
 		AABFD1C22B446ED20089B995 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AABFD1CD2B44719A0089B995 /* TipOnePerPerson */,
 				AABFD1C32B446EDD0089B995 /* TipCalculatorView */,
 				AABFD1C82B446F1A0089B995 /* CalculatorView */,
-				AABFD1CD2B44719A0089B995 /* Settings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,13 +133,13 @@
 			path = CalculatorView;
 			sourceTree = "<group>";
 		};
-		AABFD1CD2B44719A0089B995 /* Settings */ = {
+		AABFD1CD2B44719A0089B995 /* TipOnePerPerson */ = {
 			isa = PBXGroup;
 			children = (
-				AABFD1CE2B4471E30089B995 /* SettingsViewController.swift */,
-				AABFD1CF2B4471E30089B995 /* SettingsViewController.xib */,
+				AABFD1CE2B4471E30089B995 /* TipOnePersonViewController.swift */,
+				AABFD1CF2B4471E30089B995 /* TipOnePersonViewController.xib */,
 			);
-			path = Settings;
+			path = TipOnePerPerson;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AABFD1B52B446DD90089B995 /* LaunchScreen.storyboard in Resources */,
-				AABFD1D12B4471E30089B995 /* SettingsViewController.xib in Resources */,
+				AABFD1D12B4471E30089B995 /* TipOnePersonViewController.xib in Resources */,
 				AABFD1B22B446DD90089B995 /* Assets.xcassets in Resources */,
 				AABFD1C72B446F150089B995 /* TipCalculatorViewController.xib in Resources */,
 				AABFD1B02B446DD50089B995 /* Main.storyboard in Resources */,
@@ -224,7 +224,7 @@
 				AABFD1C62B446F150089B995 /* TipCalculatorViewController.swift in Sources */,
 				AABFD1CB2B44718D0089B995 /* CalculatorViewController.swift in Sources */,
 				AABFD1BE2B446E640089B995 /* Extensions.swift in Sources */,
-				AABFD1D02B4471E30089B995 /* SettingsViewController.swift in Sources */,
+				AABFD1D02B4471E30089B995 /* TipOnePersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
