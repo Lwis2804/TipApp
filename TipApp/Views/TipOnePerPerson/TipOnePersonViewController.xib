@@ -22,51 +22,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wb9-dm-aEL">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="LIk-mQ-zj7">
-                            <rect key="frame" x="140" y="284" width="160" height="50"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="160" id="Ej1-hR-Obv"/>
-                                <constraint firstAttribute="height" constant="50" id="HD4-h0-cPR"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="35"/>
-                            <color key="textColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KIl-3K-bgK">
-                            <rect key="frame" x="24" y="305" width="296" height="2"/>
-                            <color key="backgroundColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="2" id="nTY-r5-vu7"/>
-                            </constraints>
-                        </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MONTO TOTAL " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbY-zX-6uq">
-                            <rect key="frame" x="28" y="333" width="125" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="125" id="BKd-zh-ooj"/>
-                                <constraint firstAttribute="height" constant="21" id="bz6-G9-sc4"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
-                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="4Nc-CE-yQw">
-                            <rect key="frame" x="150" y="325" width="150" height="35.5"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="150" id="2c3-X7-SjU"/>
-                                <constraint firstAttribute="height" constant="35.5" id="pQI-QZ-8aq"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="35"/>
-                            <color key="textColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDj-AJ-6tl">
-                            <rect key="frame" x="127" y="404" width="90" height="41"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="gray" title="LIMPIAR"/>
-                        </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PROPINA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mj-n4-vnI">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROPINA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mj-n4-vnI">
                             <rect key="frame" x="24" y="256" width="100" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="d2W-Vm-udh"/>
@@ -76,12 +32,72 @@
                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIl-3K-bgK">
+                            <rect key="frame" x="12" y="309" width="296" height="2"/>
+                            <color key="backgroundColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="nTY-r5-vu7"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTO TOTAL " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbY-zX-6uq">
+                            <rect key="frame" x="24" y="349" width="125" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="BKd-zh-ooj"/>
+                                <constraint firstAttribute="height" constant="28" id="bz6-G9-sc4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="4Nc-CE-yQw">
+                            <rect key="frame" x="150" y="339" width="150" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="2c3-X7-SjU"/>
+                                <constraint firstAttribute="height" constant="50" id="pQI-QZ-8aq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="42"/>
+                            <color key="textColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDj-AJ-6tl">
+                            <rect key="frame" x="100" y="420" width="120" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="NFw-bZ-tbo"/>
+                                <constraint firstAttribute="width" constant="120" id="vFN-P2-SiB"/>
+                            </constraints>
+                            <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" title="LIMPIAR">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                            </buttonConfiguration>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="LIk-mQ-zj7">
+                            <rect key="frame" x="140" y="241" width="160" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="160" id="Ej1-hR-Obv"/>
+                                <constraint firstAttribute="height" constant="50" id="HD4-h0-cPR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="35"/>
+                            <color key="textColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="kbY-zX-6uq" firstAttribute="top" secondItem="KIl-3K-bgK" secondAttribute="bottom" constant="26" id="Q2k-rj-j1e"/>
-                        <constraint firstItem="4Nc-CE-yQw" firstAttribute="top" secondItem="KIl-3K-bgK" secondAttribute="bottom" constant="18" id="YYw-n6-f8f"/>
-                        <constraint firstItem="KIl-3K-bgK" firstAttribute="top" secondItem="3mj-n4-vnI" secondAttribute="bottom" constant="28" id="pae-Ch-vnO"/>
+                        <constraint firstItem="KIl-3K-bgK" firstAttribute="leading" secondItem="wb9-dm-aEL" secondAttribute="leading" constant="12" id="1fW-bl-7Ty"/>
+                        <constraint firstItem="kbY-zX-6uq" firstAttribute="leading" secondItem="wb9-dm-aEL" secondAttribute="leading" constant="24" id="3Zs-ah-B7m"/>
+                        <constraint firstAttribute="trailing" secondItem="4Nc-CE-yQw" secondAttribute="trailing" constant="20" symbolic="YES" id="FdF-7Z-lte"/>
+                        <constraint firstAttribute="trailing" secondItem="LIk-mQ-zj7" secondAttribute="trailing" constant="20" symbolic="YES" id="GU5-g6-PkU"/>
+                        <constraint firstItem="MDj-AJ-6tl" firstAttribute="centerX" secondItem="wb9-dm-aEL" secondAttribute="centerX" id="LUb-Ss-0Cy"/>
+                        <constraint firstItem="kbY-zX-6uq" firstAttribute="top" secondItem="KIl-3K-bgK" secondAttribute="bottom" constant="38" id="Q2k-rj-j1e"/>
+                        <constraint firstItem="3mj-n4-vnI" firstAttribute="top" secondItem="wb9-dm-aEL" secondAttribute="top" constant="256" id="Tng-Ee-xaF"/>
+                        <constraint firstAttribute="trailing" secondItem="KIl-3K-bgK" secondAttribute="trailing" constant="12" id="Wba-Vy-9za"/>
+                        <constraint firstItem="4Nc-CE-yQw" firstAttribute="top" secondItem="KIl-3K-bgK" secondAttribute="bottom" constant="28" id="YYw-n6-f8f"/>
+                        <constraint firstItem="KIl-3K-bgK" firstAttribute="centerX" secondItem="wb9-dm-aEL" secondAttribute="centerX" id="ddT-pc-bKW"/>
+                        <constraint firstItem="LIk-mQ-zj7" firstAttribute="top" secondItem="wb9-dm-aEL" secondAttribute="top" constant="241" id="kKX-Yj-n1h"/>
+                        <constraint firstItem="KIl-3K-bgK" firstAttribute="top" secondItem="3mj-n4-vnI" secondAttribute="bottom" constant="32" id="pae-Ch-vnO"/>
+                        <constraint firstItem="3mj-n4-vnI" firstAttribute="leading" secondItem="wb9-dm-aEL" secondAttribute="leading" constant="24" id="wHM-B6-QgL"/>
+                        <constraint firstAttribute="bottom" secondItem="MDj-AJ-6tl" secondAttribute="bottom" constant="100" id="xtd-GK-1LR"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CUENTA " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ty8-X6-2JP">
