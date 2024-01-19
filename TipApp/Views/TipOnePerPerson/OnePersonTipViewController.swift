@@ -7,13 +7,15 @@
 
 import UIKit
 
-class OnePersonTipViewController: UITabBarController {
+class OnePersonTipViewController: UIViewController {
     
     //MARK: - O U T L E T S
 
     
     @IBOutlet weak var lblCuenta: UILabel!
-    @IBOutlet weak var txtIngresarCuenta: UITextField!
+    @IBOutlet weak var txtIngresarCuenta: UITextField!{
+        didSet {self.txtIngresarCuenta.delegate = self}
+    }
     @IBOutlet weak var lblPropina: UILabel!
     @IBOutlet weak var segmentedControlPorcentaje: UISegmentedControl!
     @IBOutlet weak var lblPropinaResult: UILabel!
@@ -71,10 +73,6 @@ class OnePersonTipViewController: UITabBarController {
             }
     }
     
-    func divideTip() {
-        
-    }
-    
     
     //MARK: - A C T I O N S
     @IBAction func selectPercent(_ sender: Any) {
@@ -83,33 +81,34 @@ class OnePersonTipViewController: UITabBarController {
                 choosePercent = .tenPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+                lblMontoTotalResult.text = "$ \(ingresaCuenta + percentResult)"
   
             case 1:
                 choosePercent = .fifteenPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+                lblMontoTotalResult.text = "$ \(ingresaCuenta + percentResult)"
             case 2:
                 choosePercent = .twentyPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+                lblMontoTotalResult.text = "$ \(ingresaCuenta + percentResult)"
             case 3:
                 choosePercent = .twentyfivePercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+                lblMontoTotalResult.text = "$ \(ingresaCuenta + percentResult)"
             default:
                 break
             }
     }
     
 
-    @IBAction func btnLimpiarCuetna(_ sender: Any) {    var ingresaCuenta : Double = Double("") ?? 0.0
+    @IBAction func btnLimpiarCuetna(_ sender: Any) {
+        let ingresaCuenta : Double = Double("") ?? 0.0
         txtIngresarCuenta.text = String(ingresaCuenta)
         lblMontoPropinaResult.text = "$\(0.00)"
-        lblMontoTotal.text = "$\(0.00)"
+        lblMontoTotalResult.text = "$\(0.00)"
         segmentedControlPorcentaje.selectedSegmentIndex = 0
         segmentedControlPorcentaje.selectedSegmentIndex = 1
     }

@@ -54,6 +54,9 @@
                                 <segment title="20%"/>
                                 <segment title="25%"/>
                             </segments>
+                            <connections>
+                                <action selector="selectPercent:" destination="-1" eventType="valueChanged" id="WM8-RH-ZUQ"/>
+                            </connections>
                         </segmentedControl>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxD-68-yWy">
                             <rect key="frame" x="12" y="309" width="296" height="2"/>

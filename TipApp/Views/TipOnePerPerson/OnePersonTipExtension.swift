@@ -16,14 +16,14 @@ extension OnePersonTipViewController : UITextFieldDelegate {
             let recibedAmount : String = String(textField.text?.dropLast() ?? "")
             saveValues(withStringAmount: recibedAmount)
             calculatePercent(withAmount: ingresaCuenta)
-            lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
-            btnLimpiar.isHidden = false
+            lblMontoTotalResult.text = "$ \(ingresaCuenta + percentResult)"
+            btnLimpiar.isHidden = true
         } else {
             let recibedAmount : String = (textField.text ?? "") + string
             saveValues(withStringAmount: recibedAmount)
             calculatePercent(withAmount: ingresaCuenta)
-            lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
-            btnLimpiar.isHidden = true
+            lblMontoTotalResult.text = "$ \(ingresaCuenta + percentResult)"
+            btnLimpiar.isHidden = false
         }
         return true
     }

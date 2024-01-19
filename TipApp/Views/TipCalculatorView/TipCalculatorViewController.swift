@@ -112,11 +112,6 @@ class TipCalculatorViewController: UIViewController {
     
 
     @IBAction func addPerson(_ sender: UIStepper) {
-     /*   if sender.value <= 1 {
-            steperPersonas.isHidden = true
-       } else {
-            steperPersonas.isHidden = false
-        } */
         lblNoPersonas.text = "\(Int(sender.value))"
         let propinaNoPersonas = percentResult / sender.value
         let totalPorPersona = (ingresaCuenta + percentResult) / sender.value
@@ -126,13 +121,13 @@ class TipCalculatorViewController: UIViewController {
     }
 
     @IBAction func btnLimpiarAction(_ sender: Any) {
-        var ingresaCuenta : Double = Double("") ?? 0.0
+        let ingresaCuenta : Double = Double("") ?? 0.0
         txtIngresarCuenta.text = String(ingresaCuenta)
         lblMontoPropinaResult.text = "$\(0.00)"
         lblMontoTotal.text = "$\(0.00)"
         lblMontoPorPersonaResult.text = "$\(0.00)"
         segmentedControlPorcentaje.selectedSegmentIndex = 0
-        segmentedControlPorcentaje.selectedSegmentIndex = 1
+        segmentedControlPorcentaje.selectedSegmentIndex = 0
         lblNoPersonas.text = "\(1)"
     }
     
