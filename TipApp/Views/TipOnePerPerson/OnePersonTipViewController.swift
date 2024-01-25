@@ -38,6 +38,8 @@ class OnePersonTipViewController: UIViewController {
     //MARK: - L I F E . C Y C L E
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tap)
     }
     
     
@@ -73,6 +75,12 @@ class OnePersonTipViewController: UIViewController {
             }
     }
     
+    //Calls this function when the tap is recognized.
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+        // APARECER BOTON DE LIMPIAR
+    }
     
     //MARK: - A C T I O N S
     @IBAction func selectPercent(_ sender: Any) {
@@ -110,7 +118,8 @@ class OnePersonTipViewController: UIViewController {
         lblMontoPropinaResult.text = "$\(0.00)"
         lblMontoTotalResult.text = "$\(0.00)"
         segmentedControlPorcentaje.selectedSegmentIndex = 0
-        segmentedControlPorcentaje.selectedSegmentIndex = 1
+        btnLimpiar.isHidden = true
+     
     }
     
 

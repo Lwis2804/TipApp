@@ -28,6 +28,7 @@ class TipCalculatorViewController: UIViewController {
     var ingresaCuenta : Double = 0
     private var choosePercent : percent = .none
     var percentResult : Double = 0
+    var nOPersonas: Int = 1
     
     private enum percent {
         case none, tenPercent, fifteenPercent, twentyPercent, twentyfivePercent
@@ -36,15 +37,15 @@ class TipCalculatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         txtIngresarCuenta.delegate = self
-        segmentedControlPorcentaje.isHidden = true
-        steperPersonas.isHidden = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tap)
     }
     
     
     //MARK: - F U N C T I O N S
     
-    func saveValues( withStringAmount strAmnt : String){
-        self.ingresaCuenta = Double(strAmnt) ?? 0.0
+    func toDouble(withAmount strAmnt: String) -> Double {
+        return Double(strAmnt) ?? 0.0
     }
     
     
@@ -52,70 +53,68 @@ class TipCalculatorViewController: UIViewController {
             switch choosePercent {
             case .tenPercent, .none:
                 percentResult = withAmount * 0.1
-                lblMontoPropinaResult.text = "\(percentResult)"
+                lblMontoPropinaResult.text = "\(percentResult / Double(nOPersonas))"
                 segmentedControlPorcentaje.isHidden = false
                 break
             case .fifteenPercent:
                 percentResult = withAmount * 0.15
-                lblMontoPropinaResult.text = "\(percentResult)"
+                lblMontoPropinaResult.text = "\(percentResult / Double(nOPersonas))"
                 segmentedControlPorcentaje.isHidden = false
                 break
             case .twentyPercent:
                 percentResult = withAmount * 0.2
-                lblMontoPropinaResult.text = "\(percentResult)"
+                lblMontoPropinaResult.text = "\(percentResult / Double(nOPersonas))"
                 segmentedControlPorcentaje.isHidden = false
                 break
             case .twentyfivePercent:
                 percentResult = withAmount * 0.25
-                lblMontoPropinaResult.text = "\(percentResult)"
+                lblMontoPropinaResult.text = "\(percentResult / Double(nOPersonas))"
                 segmentedControlPorcentaje.isHidden = false
                 break
             }
     }
     
-    func divideTip() {
-        
+    //Calls this function when the tap is recognized.
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+        // APARECER BOTON DE LIMPIAR
+    }
+    
+    func updateAmount(){
+        calculatePercent(withAmount: self.toDouble(withAmount: txtIngresarCuenta.text ?? ""))
+        lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
+        lblMontoPorPersonaResult.text = "$ \(ingresaCuenta + percentResult)"
     }
     
     
     //MARK: - A C T I O N S
     @IBAction func selectPercent(_ sender: Any) {
-            switch segmentedControlPorcentaje.selectedSegmentIndex {
-            case 0:
-                choosePercent = .tenPercent
-                percentResult = ingresaCuenta
-                calculatePercent(withAmount: percentResult)
-                lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
-                lblMontoPorPersonaResult.text = "$ \(ingresaCuenta + percentResult)"
-            case 1:
-                choosePercent = .fifteenPercent
-                percentResult = ingresaCuenta
-                calculatePercent(withAmount: percentResult)
-                lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
-                lblMontoPorPersonaResult.text = "$ \(ingresaCuenta + percentResult)"
-            case 2:
-                choosePercent = .twentyPercent
-                percentResult = ingresaCuenta
-                calculatePercent(withAmount: percentResult)
-                lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
-                lblMontoPorPersonaResult.text = "$ \(ingresaCuenta + percentResult)"
-            case 3:
-                choosePercent = .twentyfivePercent
-                percentResult = ingresaCuenta
-                calculatePercent(withAmount: percentResult)
-                lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
-                lblMontoPorPersonaResult.text = "$ \(ingresaCuenta + percentResult)"
-            default:
-                break
-            }
+        switch segmentedControlPorcentaje.selectedSegmentIndex {
+        case 0:
+            choosePercent = .tenPercent
+            self.updateAmount()
+        case 1:
+            choosePercent = .fifteenPercent
+            self.updateAmount()
+        case 2:
+            choosePercent = .twentyPercent
+            self.updateAmount()
+        case 3:
+            choosePercent = .twentyfivePercent
+            self.updateAmount()
+        default:
+            break
+        }
     }
     
 
     @IBAction func addPerson(_ sender: UIStepper) {
+        sender.minimumValue = 1
         lblNoPersonas.text = "\(Int(sender.value))"
-        let propinaNoPersonas = percentResult / sender.value
-        let totalPorPersona = (ingresaCuenta + percentResult) / sender.value
-        print(sender.value)
+        self.nOPersonas = Int(sender.value)
+        let propinaNoPersonas = percentResult / Double(nOPersonas)
+        let totalPorPersona = (ingresaCuenta + percentResult) / Double(nOPersonas)
         lblMontoPropinaResult.text = String(propinaNoPersonas)
         lblMontoPorPersonaResult.text = String(totalPorPersona)
     }
