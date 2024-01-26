@@ -54,22 +54,22 @@ class OnePersonTipViewController: UIViewController {
             switch choosePercent {
             case .tenPercent, .none:
                 percentResult = withAmount * 0.1
-                lblMontoPropinaResult.text = "\(percentResult)"
+                lblMontoPropinaResult.text = "$\(percentResult) MXN"
                 segmentedControlPorcentaje.isHidden = false
                 break
             case .fifteenPercent:
                 percentResult = withAmount * 0.15
-                lblMontoPropinaResult.text = "\(percentResult)"
+                lblMontoPropinaResult.text = "$\(percentResult) MXN"
                 segmentedControlPorcentaje.isHidden = false
                 break
             case .twentyPercent:
                 percentResult = withAmount * 0.2
-                lblMontoPropinaResult.text = "\(percentResult)"
+                lblMontoPropinaResult.text = "$\(percentResult) MXN"
                 segmentedControlPorcentaje.isHidden = false
                 break
             case .twentyfivePercent:
                 percentResult = withAmount * 0.25
-                lblMontoPropinaResult.text = "\(percentResult)"
+                lblMontoPropinaResult.text = "$\(percentResult) MXN"
                 segmentedControlPorcentaje.isHidden = false
                 break
             }
@@ -89,23 +89,23 @@ class OnePersonTipViewController: UIViewController {
                 choosePercent = .tenPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                lblMontoTotalResult.text = "$ \(ingresaCuenta + percentResult)"
+                lblMontoTotalResult.text = "$\(ingresaCuenta + percentResult) MXN"
   
             case 1:
                 choosePercent = .fifteenPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                lblMontoTotalResult.text = "$ \(ingresaCuenta + percentResult)"
+                lblMontoTotalResult.text = "$\(ingresaCuenta + percentResult) MXN"
             case 2:
                 choosePercent = .twentyPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                lblMontoTotalResult.text = "$ \(ingresaCuenta + percentResult)"
+                lblMontoTotalResult.text = "$\(ingresaCuenta + percentResult) MXN"
             case 3:
                 choosePercent = .twentyfivePercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                lblMontoTotalResult.text = "$ \(ingresaCuenta + percentResult)"
+                lblMontoTotalResult.text = "$\(ingresaCuenta + percentResult) MXN"
             default:
                 break
             }
