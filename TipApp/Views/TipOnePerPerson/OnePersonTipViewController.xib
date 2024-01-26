@@ -41,7 +41,7 @@
                             <color key="textColor" red="0.51955038310000001" green="0.43446475270000001" blue="0.45874303579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="op2-ld-nzo">
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="op2-ld-nzo">
                             <rect key="frame" x="16" y="158" width="288" height="49"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="AIc-bF-Ajg"/>

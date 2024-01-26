@@ -43,26 +43,26 @@
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ 00. 0000" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XPF-61-7C1">
-                    <rect key="frame" x="32" y="57" width="256" height="45"/>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00. 00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XPF-61-7C1">
+                    <rect key="frame" x="87.5" y="57" width="145" height="38"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="45" id="nb0-fe-fYp"/>
+                        <constraint firstAttribute="height" constant="38" id="nb0-fe-fYp"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="36"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROPINA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWf-G2-vpZ">
-                    <rect key="frame" x="16" y="114" width="100" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PORCENTAJE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWf-G2-vpZ">
+                    <rect key="frame" x="16" y="107" width="130" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="HMc-Kz-lTq"/>
-                        <constraint firstAttribute="width" constant="100" id="fRc-Rs-oCe"/>
+                        <constraint firstAttribute="width" constant="130" id="fRc-Rs-oCe"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="enk-db-J2e">
-                    <rect key="frame" x="16" y="147" width="288" height="49"/>
+                    <rect key="frame" x="16" y="140" width="288" height="49"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="DVz-NW-Fij"/>
                     </constraints>
@@ -77,7 +77,7 @@
                     </connections>
                 </segmentedControl>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONAS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSj-C2-5K8">
-                    <rect key="frame" x="16" y="209" width="100" height="21"/>
+                    <rect key="frame" x="16" y="202" width="100" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="Yq0-dQ-OZg"/>
                         <constraint firstAttribute="height" constant="21" id="xYp-5f-kKS"/>
@@ -87,16 +87,16 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COF-re-vea">
-                    <rect key="frame" x="173" y="236" width="131" height="48"/>
+                    <rect key="frame" x="173" y="235" width="131" height="29"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="48" id="WL7-jA-4IQ"/>
+                        <constraint firstAttribute="height" constant="29" id="WL7-jA-4IQ"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="36"/>
+                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="26"/>
                     <color key="textColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6pM-6S-G7b">
-                    <rect key="frame" x="55" y="254" width="94" height="32"/>
+                    <rect key="frame" x="55" y="235" width="94" height="32"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="32" id="goC-uR-j7k"/>
                     </constraints>
@@ -105,7 +105,7 @@
                     </connections>
                 </stepper>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROPINA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fb-l2-SDV">
-                    <rect key="frame" x="16" y="308" width="100" height="21"/>
+                    <rect key="frame" x="16" y="289" width="100" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="7MN-ek-yvU"/>
                         <constraint firstAttribute="height" constant="21" id="BiJ-oQ-Kgy"/>
@@ -115,7 +115,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="4nR-Oo-fCu">
-                    <rect key="frame" x="144" y="302" width="160" height="40"/>
+                    <rect key="frame" x="144" y="283" width="160" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="160" id="AZ0-jp-bpv"/>
                         <constraint firstAttribute="height" constant="40" id="M04-Ch-MYF"/>
@@ -125,14 +125,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzg-YE-KBe">
-                    <rect key="frame" x="12" y="398" width="296" height="2"/>
+                    <rect key="frame" x="12" y="379" width="296" height="2"/>
                     <color key="backgroundColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="2" id="54i-GQ-2rk"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YET-Wy-StS">
-                    <rect key="frame" x="115" y="499" width="90" height="41"/>
+                    <rect key="frame" x="115" y="489" width="90" height="41"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="90" id="qUB-7Y-I6K"/>
                         <constraint firstAttribute="height" constant="41" id="tRF-B5-jQG"/>
@@ -145,7 +145,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTO TOTAL " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBE-CE-XjJ">
-                    <rect key="frame" x="16" y="358" width="125" height="16"/>
+                    <rect key="frame" x="16" y="339" width="125" height="16"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="125" id="phu-XS-Fdo"/>
                     </constraints>
@@ -154,17 +154,17 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="qIJ-QP-RAb">
-                    <rect key="frame" x="144" y="350" width="160" height="40"/>
+                    <rect key="frame" x="144" y="331" width="160" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="9aO-zK-qxa"/>
                         <constraint firstAttribute="width" constant="160" id="dvG-w5-d2f"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
+                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
                     <color key="textColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTO PORPERSONA " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP7-wf-UkO">
-                    <rect key="frame" x="16" y="432" width="140" height="36"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTO POR PERSONA " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP7-wf-UkO">
+                    <rect key="frame" x="16" y="413" width="140" height="36"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="ioB-Ts-kRF"/>
                     </constraints>
@@ -173,12 +173,22 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="CZO-pZ-A6p">
-                    <rect key="frame" x="164" y="430" width="140" height="40"/>
+                    <rect key="frame" x="164" y="411" width="140" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="GqG-Yo-2fL"/>
                         <constraint firstAttribute="height" constant="40" id="ldA-xy-fIG"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="39"/>
+                    <color key="textColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78K-DI-XHQ">
+                    <rect key="frame" x="63.5" y="57" width="24" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="lRD-as-QR4"/>
+                        <constraint firstAttribute="width" constant="24" id="rwR-55-jTI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="26"/>
                     <color key="textColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -191,6 +201,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CZO-pZ-A6p" secondAttribute="trailing" constant="16" id="4dE-ho-Oza"/>
                 <constraint firstItem="1Fb-l2-SDV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6Yt-Tk-ly7"/>
                 <constraint firstItem="XPF-61-7C1" firstAttribute="top" secondItem="hbf-zk-kwh" secondAttribute="bottom" constant="12" id="8PL-Yn-GgF"/>
+                <constraint firstItem="XPF-61-7C1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="95Y-ou-hke"/>
                 <constraint firstItem="tzg-YE-KBe" firstAttribute="top" secondItem="qIJ-QP-RAb" secondAttribute="bottom" constant="8" symbolic="YES" id="9Bs-d1-o3V"/>
                 <constraint firstItem="1Fb-l2-SDV" firstAttribute="top" secondItem="6pM-6S-G7b" secondAttribute="bottom" constant="22" id="9ET-CO-2wx"/>
                 <constraint firstItem="CZO-pZ-A6p" firstAttribute="top" secondItem="tzg-YE-KBe" secondAttribute="bottom" constant="30" id="ABO-Sm-x94"/>
@@ -201,22 +212,22 @@
                 <constraint firstItem="enk-db-J2e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="M1q-n2-dh3"/>
                 <constraint firstItem="tzg-YE-KBe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="QAm-cT-UgK"/>
                 <constraint firstItem="hbf-zk-kwh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="RqL-ek-r4Z"/>
-                <constraint firstItem="XPF-61-7C1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="VH9-vG-dik"/>
                 <constraint firstAttribute="trailing" secondItem="tzg-YE-KBe" secondAttribute="trailing" constant="12" id="Vjj-D4-MyJ"/>
                 <constraint firstItem="qIJ-QP-RAb" firstAttribute="top" secondItem="4nR-Oo-fCu" secondAttribute="bottom" constant="8" symbolic="YES" id="XWV-TH-IPs"/>
+                <constraint firstItem="YET-Wy-StS" firstAttribute="top" secondItem="CZO-pZ-A6p" secondAttribute="bottom" constant="38" id="Yuc-Lr-XHi"/>
+                <constraint firstItem="78K-DI-XHQ" firstAttribute="top" secondItem="hbf-zk-kwh" secondAttribute="bottom" constant="12" id="avX-zQ-wUo"/>
                 <constraint firstItem="nSj-C2-5K8" firstAttribute="top" secondItem="enk-db-J2e" secondAttribute="bottom" constant="14" id="bKE-3n-g7k"/>
                 <constraint firstItem="kP7-wf-UkO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="eMP-x4-9dd"/>
                 <constraint firstItem="enk-db-J2e" firstAttribute="top" secondItem="GWf-G2-vpZ" secondAttribute="bottom" constant="12" id="egG-7Y-UdJ"/>
                 <constraint firstItem="COF-re-vea" firstAttribute="leading" secondItem="6pM-6S-G7b" secondAttribute="trailing" constant="24" id="eu0-hX-P3t"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YET-Wy-StS" secondAttribute="bottom" constant="28" id="ffb-SV-Xmy"/>
+                <constraint firstItem="XPF-61-7C1" firstAttribute="leading" secondItem="78K-DI-XHQ" secondAttribute="trailing" id="fmW-kQ-FRV"/>
                 <constraint firstItem="nSj-C2-5K8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hh9-3X-xc0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="enk-db-J2e" secondAttribute="trailing" constant="16" id="m8D-Ea-0jp"/>
                 <constraint firstItem="cBE-CE-XjJ" firstAttribute="top" secondItem="4nR-Oo-fCu" secondAttribute="bottom" constant="16" id="oLD-wb-MwP"/>
-                <constraint firstItem="COF-re-vea" firstAttribute="top" secondItem="nSj-C2-5K8" secondAttribute="bottom" constant="6" id="pcV-8T-Y5U"/>
+                <constraint firstItem="COF-re-vea" firstAttribute="top" secondItem="nSj-C2-5K8" secondAttribute="bottom" constant="12" id="pcV-8T-Y5U"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="COF-re-vea" secondAttribute="trailing" constant="16" id="qA2-MW-vAe"/>
                 <constraint firstItem="GWf-G2-vpZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="rJn-jy-50W"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XPF-61-7C1" secondAttribute="trailing" constant="32" id="tTW-ld-vxi"/>
-                <constraint firstItem="6pM-6S-G7b" firstAttribute="top" secondItem="nSj-C2-5K8" secondAttribute="bottom" constant="24" id="ue8-YV-UOP"/>
+                <constraint firstItem="6pM-6S-G7b" firstAttribute="top" secondItem="nSj-C2-5K8" secondAttribute="bottom" constant="12" id="ue8-YV-UOP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qIJ-QP-RAb" secondAttribute="trailing" constant="16" id="w8t-ZS-6oq"/>
                 <constraint firstItem="hbf-zk-kwh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="wC0-mH-iBb"/>
                 <constraint firstItem="GWf-G2-vpZ" firstAttribute="top" secondItem="XPF-61-7C1" secondAttribute="bottom" constant="12" id="wki-Xr-6g1"/>
