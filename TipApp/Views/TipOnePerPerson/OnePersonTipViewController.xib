@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,24 +25,24 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tN2-cB-Hzh">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROPINA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEM-dT-oB5">
-                            <rect key="frame" x="24" y="256" width="100" height="21"/>
+                            <rect key="frame" x="24" y="240" width="100" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="T2B-5X-NhQ"/>
                                 <constraint firstAttribute="width" constant="100" id="mJ7-Ou-Do9"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
-                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.51955038310000001" green="0.43446475270000001" blue="0.45874303579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="op2-ld-nzo">
-                            <rect key="frame" x="16" y="172" width="288" height="49"/>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="op2-ld-nzo">
+                            <rect key="frame" x="16" y="158" width="288" height="49"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="AIc-bF-Ajg"/>
                                 <constraint firstAttribute="width" constant="288" id="XHz-B6-lJf"/>
@@ -59,24 +58,24 @@
                             </connections>
                         </segmentedControl>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxD-68-yWy">
-                            <rect key="frame" x="12" y="309" width="296" height="2"/>
+                            <rect key="frame" x="12" y="287" width="296" height="2"/>
                             <color key="backgroundColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="2" id="Q19-gR-Y7a"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTO TOTAL " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgR-dg-LRF">
-                            <rect key="frame" x="24" y="349" width="125" height="28"/>
+                            <rect key="frame" x="24" y="327" width="125" height="28"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="125" id="4Cz-zc-EPZ"/>
                                 <constraint firstAttribute="height" constant="28" id="gdP-Be-3gp"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
-                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.51955038310000001" green="0.43446475270000001" blue="0.45874303579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="stU-Ya-D0o">
-                            <rect key="frame" x="150" y="339" width="150" height="50"/>
+                            <rect key="frame" x="150" y="317" width="150" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="X2q-VX-eSH"/>
                                 <constraint firstAttribute="width" constant="150" id="lIZ-fS-otS"/>
@@ -86,10 +85,10 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIR-L1-m0R">
-                            <rect key="frame" x="100" y="420" width="120" height="48"/>
+                            <rect key="frame" x="100" y="407" width="120" height="48"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="48" id="QFS-iW-PDw"/>
-                                <constraint firstAttribute="width" constant="120" id="q8x-ef-F2G"/>
+                                <constraint firstAttribute="width" constant="120" id="NII-nq-uo6"/>
+                                <constraint firstAttribute="height" constant="48" id="aMJ-bc-RHz"/>
                             </constraints>
                             <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Button"/>
@@ -101,12 +100,12 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="ArS-Q4-VaT">
-                            <rect key="frame" x="140" y="241" width="160" height="50"/>
+                            <rect key="frame" x="140" y="225" width="160" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="160" id="bpF-5s-CRp"/>
                                 <constraint firstAttribute="height" constant="50" id="m5v-7N-yKm"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="35"/>
+                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
                             <color key="textColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -117,69 +116,78 @@
                                 <constraint firstAttribute="width" constant="100" id="wNO-KE-B2n"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
-                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.51955038310000001" green="0.43446475270000001" blue="0.45874303579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ 00. 0000" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hxZ-EB-5R1">
-                            <rect key="frame" x="46.5" y="65" width="227" height="50"/>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" 00. 00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hxZ-EB-5R1">
+                            <rect key="frame" x="81.5" y="60" width="157" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="KuY-by-3Fi"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="36"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROPINA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYE-OD-Epg">
-                            <rect key="frame" x="16" y="135" width="100" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PORCENTAJE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYE-OD-Epg">
+                            <rect key="frame" x="16" y="125" width="120" height="21"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="100" id="0XF-eA-nbf"/>
+                                <constraint firstAttribute="width" constant="120" id="0XF-eA-nbf"/>
                                 <constraint firstAttribute="height" constant="21" id="czT-ah-6zg"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
-                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.51955038310000001" green="0.43446475270000001" blue="0.45874303579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="48M-b9-4co">
+                            <rect key="frame" x="61.5" y="60" width="20" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="nme-Fn-Z14"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
+                            <color key="textColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="hxZ-EB-5R1" firstAttribute="centerX" secondItem="tN2-cB-Hzh" secondAttribute="centerX" id="23h-tm-jyG"/>
-                        <constraint firstItem="fxD-68-yWy" firstAttribute="top" secondItem="oEM-dT-oB5" secondAttribute="bottom" constant="32" id="3v9-Em-snf"/>
+                        <constraint firstItem="fxD-68-yWy" firstAttribute="top" secondItem="oEM-dT-oB5" secondAttribute="bottom" constant="26" id="3v9-Em-snf"/>
                         <constraint firstItem="aUy-fY-JF3" firstAttribute="leading" secondItem="tN2-cB-Hzh" secondAttribute="leading" constant="16" id="9oM-Or-ZhR"/>
                         <constraint firstItem="KgR-dg-LRF" firstAttribute="leading" secondItem="tN2-cB-Hzh" secondAttribute="leading" constant="24" id="Bxk-07-uxJ"/>
+                        <constraint firstItem="48M-b9-4co" firstAttribute="height" secondItem="hxZ-EB-5R1" secondAttribute="height" id="J1m-u0-FMk"/>
                         <constraint firstAttribute="trailing" secondItem="ArS-Q4-VaT" secondAttribute="trailing" constant="20" symbolic="YES" id="KD3-7Y-Nkx"/>
-                        <constraint firstItem="uIR-L1-m0R" firstAttribute="centerX" secondItem="tN2-cB-Hzh" secondAttribute="centerX" id="Kof-ac-ugR"/>
                         <constraint firstAttribute="trailing" secondItem="fxD-68-yWy" secondAttribute="trailing" constant="12" id="LrP-Dx-Rjp"/>
-                        <constraint firstItem="CYE-OD-Epg" firstAttribute="top" secondItem="hxZ-EB-5R1" secondAttribute="bottom" constant="20" id="NVZ-3I-l4G"/>
+                        <constraint firstItem="CYE-OD-Epg" firstAttribute="top" secondItem="hxZ-EB-5R1" secondAttribute="bottom" constant="15" id="NVZ-3I-l4G"/>
                         <constraint firstItem="fxD-68-yWy" firstAttribute="leading" secondItem="tN2-cB-Hzh" secondAttribute="leading" constant="12" id="ODQ-Ea-zXu"/>
                         <constraint firstItem="oEM-dT-oB5" firstAttribute="leading" secondItem="tN2-cB-Hzh" secondAttribute="leading" constant="24" id="PNw-UR-jXt"/>
+                        <constraint firstItem="hxZ-EB-5R1" firstAttribute="leading" secondItem="48M-b9-4co" secondAttribute="trailing" id="Pxj-lT-71B"/>
+                        <constraint firstItem="uIR-L1-m0R" firstAttribute="top" secondItem="stU-Ya-D0o" secondAttribute="bottom" constant="40" id="TQD-53-wvr"/>
+                        <constraint firstItem="48M-b9-4co" firstAttribute="top" secondItem="aUy-fY-JF3" secondAttribute="bottom" constant="15" id="WSa-fM-rQl"/>
                         <constraint firstItem="stU-Ya-D0o" firstAttribute="top" secondItem="fxD-68-yWy" secondAttribute="bottom" constant="28" id="ZIV-hi-392"/>
                         <constraint firstItem="fxD-68-yWy" firstAttribute="centerX" secondItem="tN2-cB-Hzh" secondAttribute="centerX" id="cbF-el-l77"/>
+                        <constraint firstItem="uIR-L1-m0R" firstAttribute="centerX" secondItem="tN2-cB-Hzh" secondAttribute="centerX" id="daa-2T-LCZ"/>
                         <constraint firstItem="op2-ld-nzo" firstAttribute="centerX" secondItem="tN2-cB-Hzh" secondAttribute="centerX" id="olx-Ok-i0h"/>
                         <constraint firstAttribute="trailing" secondItem="stU-Ya-D0o" secondAttribute="trailing" constant="20" symbolic="YES" id="pFY-QZ-svx"/>
-                        <constraint firstItem="oEM-dT-oB5" firstAttribute="top" secondItem="tN2-cB-Hzh" secondAttribute="top" constant="256" id="qfA-Hn-GVn"/>
+                        <constraint firstItem="oEM-dT-oB5" firstAttribute="top" secondItem="tN2-cB-Hzh" secondAttribute="top" constant="240" id="qfA-Hn-GVn"/>
                         <constraint firstItem="KgR-dg-LRF" firstAttribute="top" secondItem="fxD-68-yWy" secondAttribute="bottom" constant="38" id="reP-Bf-B3k"/>
-                        <constraint firstItem="op2-ld-nzo" firstAttribute="top" secondItem="CYE-OD-Epg" secondAttribute="bottom" constant="16" id="rsg-ii-RRb"/>
-                        <constraint firstAttribute="bottom" secondItem="uIR-L1-m0R" secondAttribute="bottom" constant="100" id="sxo-tu-oXF"/>
+                        <constraint firstItem="op2-ld-nzo" firstAttribute="top" secondItem="CYE-OD-Epg" secondAttribute="bottom" constant="12" id="rsg-ii-RRb"/>
                         <constraint firstItem="CYE-OD-Epg" firstAttribute="leading" secondItem="tN2-cB-Hzh" secondAttribute="leading" constant="16" id="tKK-eF-6zd"/>
-                        <constraint firstItem="hxZ-EB-5R1" firstAttribute="top" secondItem="aUy-fY-JF3" secondAttribute="bottom" constant="20" id="v9y-I0-Ikb"/>
-                        <constraint firstItem="ArS-Q4-VaT" firstAttribute="top" secondItem="tN2-cB-Hzh" secondAttribute="top" constant="241" id="yTT-Z3-7Cg"/>
+                        <constraint firstItem="hxZ-EB-5R1" firstAttribute="top" secondItem="aUy-fY-JF3" secondAttribute="bottom" constant="15" id="v9y-I0-Ikb"/>
+                        <constraint firstItem="ArS-Q4-VaT" firstAttribute="top" secondItem="tN2-cB-Hzh" secondAttribute="top" constant="225" id="yTT-Z3-7Cg"/>
                         <constraint firstItem="aUy-fY-JF3" firstAttribute="top" secondItem="tN2-cB-Hzh" secondAttribute="top" constant="24" id="ygw-d0-tSN"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.92156857250000002" green="0.92156857250000002" blue="0.92156857250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="tN2-cB-Hzh" secondAttribute="bottom" id="GZH-3H-cY9"/>
                 <constraint firstItem="tN2-cB-Hzh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="K54-7E-Tfi"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tN2-cB-Hzh" secondAttribute="trailing" id="NPu-Ca-moq"/>
                 <constraint firstItem="tN2-cB-Hzh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wgy-pw-lBC"/>
             </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
             <point key="canvasLocation" x="131" y="-12"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
