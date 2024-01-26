@@ -119,8 +119,8 @@
                             <color key="textColor" red="0.51955038310000001" green="0.43446475270000001" blue="0.45874303579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" 00. 00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hxZ-EB-5R1">
-                            <rect key="frame" x="81.5" y="60" width="157" height="50"/>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" 00.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hxZ-EB-5R1">
+                            <rect key="frame" x="87.5" y="60" width="145" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="KuY-by-3Fi"/>
                             </constraints>
@@ -138,7 +138,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="48M-b9-4co">
-                            <rect key="frame" x="61.5" y="60" width="20" height="50"/>
+                            <rect key="frame" x="67.5" y="60" width="20" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="20" id="nme-Fn-Z14"/>
                             </constraints>

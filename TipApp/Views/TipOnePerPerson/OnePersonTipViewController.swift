@@ -40,6 +40,9 @@ class OnePersonTipViewController: UIViewController {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tap)
+        let font = UIFont.systemFont(ofSize: 25)
+        segmentedControlPorcentaje.setTitleTextAttributes([NSAttributedString.Key.font: font],
+                                                for: .normal)
     }
     
     
@@ -54,26 +57,28 @@ class OnePersonTipViewController: UIViewController {
             switch choosePercent {
             case .tenPercent, .none:
                 percentResult = withAmount * 0.1
-                lblMontoPropinaResult.text = "$\(percentResult) MXN"
+                lblMontoPropinaResult.text = "$\(percentResult.redondear(numeroDeDecimales: 2)) MXN"
                 segmentedControlPorcentaje.isHidden = false
                 break
             case .fifteenPercent:
                 percentResult = withAmount * 0.15
-                lblMontoPropinaResult.text = "$\(percentResult) MXN"
+                lblMontoPropinaResult.text = "$\(percentResult.redondear(numeroDeDecimales: 2)) MXN"
                 segmentedControlPorcentaje.isHidden = false
                 break
             case .twentyPercent:
                 percentResult = withAmount * 0.2
-                lblMontoPropinaResult.text = "$\(percentResult) MXN"
+                lblMontoPropinaResult.text = "$\(percentResult.redondear(numeroDeDecimales: 2)) MXN"
                 segmentedControlPorcentaje.isHidden = false
                 break
             case .twentyfivePercent:
                 percentResult = withAmount * 0.25
-                lblMontoPropinaResult.text = "$\(percentResult) MXN"
+                lblMontoPropinaResult.text = "$\(percentResult.redondear(numeroDeDecimales: 2)) MXN"
                 segmentedControlPorcentaje.isHidden = false
                 break
             }
     }
+    
+ 
     
     //Calls this function when the tap is recognized.
     @objc func dismissKeyboard() {
@@ -89,23 +94,24 @@ class OnePersonTipViewController: UIViewController {
                 choosePercent = .tenPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                lblMontoTotalResult.text = "$\(ingresaCuenta + percentResult) MXN"
+                lblMontoTotalResult.text = "$\((ingresaCuenta.redondear(numeroDeDecimales: 2)) + (percentResult.redondear(numeroDeDecimales: 2))) MXN"
+                
   
             case 1:
                 choosePercent = .fifteenPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                lblMontoTotalResult.text = "$\(ingresaCuenta + percentResult) MXN"
+                lblMontoTotalResult.text = "$\((ingresaCuenta.redondear(numeroDeDecimales: 2)) + (percentResult.redondear(numeroDeDecimales: 2))) MXN"
             case 2:
                 choosePercent = .twentyPercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                lblMontoTotalResult.text = "$\(ingresaCuenta + percentResult) MXN"
+                lblMontoTotalResult.text = "$\((ingresaCuenta.redondear(numeroDeDecimales: 2)) + (percentResult.redondear(numeroDeDecimales: 2))) MXN"
             case 3:
                 choosePercent = .twentyfivePercent
                 percentResult = ingresaCuenta
                 calculatePercent(withAmount: percentResult)
-                lblMontoTotalResult.text = "$\(ingresaCuenta + percentResult) MXN"
+                lblMontoTotalResult.text = "$\((ingresaCuenta.redondear(numeroDeDecimales: 2)) + (percentResult.redondear(numeroDeDecimales: 2))) MXN"
             default:
                 break
             }

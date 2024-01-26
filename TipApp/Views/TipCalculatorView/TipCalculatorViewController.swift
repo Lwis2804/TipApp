@@ -39,6 +39,9 @@ class TipCalculatorViewController: UIViewController {
         txtIngresarCuenta.delegate = self
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tap)
+        let font = UIFont.systemFont(ofSize: 20)
+        segmentedControlPorcentaje.setTitleTextAttributes([NSAttributedString.Key.font: font],
+                                                for: .normal)
     }
     
     
@@ -48,28 +51,33 @@ class TipCalculatorViewController: UIViewController {
         return Double(strAmnt) ?? 0.0
     }
     
+    func formatToMoney(withDouble Dbl: Double) -> String {
+       return String(format: "$ %.2f MXN", Dbl)
+    }
+    
+    func updateValues() {
+        lblMontoPropinaResult.text = formatToMoney(withDouble: percentResult / Double(nOPersonas))
+        segmentedControlPorcentaje.isHidden = false
+    }
+    
     
     func calculatePercent( withAmount : Double) {
             switch choosePercent {
             case .tenPercent, .none:
                 percentResult = withAmount * 0.1
-                lblMontoPropinaResult.text = "\(percentResult / Double(nOPersonas))"
-                segmentedControlPorcentaje.isHidden = false
+                updateValues()
                 break
             case .fifteenPercent:
                 percentResult = withAmount * 0.15
-                lblMontoPropinaResult.text = "\(percentResult / Double(nOPersonas))"
-                segmentedControlPorcentaje.isHidden = false
+                updateValues()
                 break
             case .twentyPercent:
                 percentResult = withAmount * 0.2
-                lblMontoPropinaResult.text = "\(percentResult / Double(nOPersonas))"
-                segmentedControlPorcentaje.isHidden = false
+                updateValues()
                 break
             case .twentyfivePercent:
                 percentResult = withAmount * 0.25
-                lblMontoPropinaResult.text = "\(percentResult / Double(nOPersonas))"
-                segmentedControlPorcentaje.isHidden = false
+                updateValues()
                 break
             }
     }
@@ -83,8 +91,8 @@ class TipCalculatorViewController: UIViewController {
     
     func updateAmount(){
         calculatePercent(withAmount: self.toDouble(withAmount: txtIngresarCuenta.text ?? ""))
-        lblMontoTotal.text = "$ \(ingresaCuenta + percentResult)"
-        lblMontoPorPersonaResult.text = "$ \(ingresaCuenta + percentResult)"
+        lblMontoTotal.text = formatToMoney(withDouble: ingresaCuenta + percentResult)
+        lblMontoPorPersonaResult.text = formatToMoney(withDouble: ingresaCuenta + percentResult)
     }
     
     
@@ -108,23 +116,20 @@ class TipCalculatorViewController: UIViewController {
         }
     }
     
-
     @IBAction func addPerson(_ sender: UIStepper) {
         sender.minimumValue = 1
         lblNoPersonas.text = "\(Int(sender.value))"
         self.nOPersonas = Int(sender.value)
-        let propinaNoPersonas = percentResult / Double(nOPersonas)
-        let totalPorPersona = (ingresaCuenta + percentResult) / Double(nOPersonas)
-        lblMontoPropinaResult.text = String(propinaNoPersonas)
-        lblMontoPorPersonaResult.text = String(totalPorPersona)
+        lblMontoPropinaResult.text = formatToMoney(withDouble: percentResult / Double(nOPersonas))
+        lblMontoPorPersonaResult.text = formatToMoney(withDouble: (ingresaCuenta + percentResult) / Double(nOPersonas))
     }
 
     @IBAction func btnLimpiarAction(_ sender: Any) {
         let ingresaCuenta : Double = Double("") ?? 0.0
         txtIngresarCuenta.text = String(ingresaCuenta)
-        lblMontoPropinaResult.text = "$\(0.00)"
-        lblMontoTotal.text = "$\(0.00)"
-        lblMontoPorPersonaResult.text = "$\(0.00)"
+        lblMontoPropinaResult.text = "$\(0.00) MXN"
+        lblMontoTotal.text = "$\(0.00)MXN"
+        lblMontoPorPersonaResult.text = "$\(0.00)MXN"
         segmentedControlPorcentaje.selectedSegmentIndex = 0
         segmentedControlPorcentaje.selectedSegmentIndex = 0
         lblNoPersonas.text = "\(1)"
