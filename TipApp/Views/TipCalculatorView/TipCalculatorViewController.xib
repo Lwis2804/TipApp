@@ -164,23 +164,24 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTO POR PERSONA " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP7-wf-UkO">
-                    <rect key="frame" x="16" y="413" width="140" height="36"/>
+                    <rect key="frame" x="16" y="413" width="120" height="36"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="140" id="ioB-Ts-kRF"/>
+                        <constraint firstAttribute="width" constant="120" id="ioB-Ts-kRF"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="18"/>
                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00 MXN" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="CZO-pZ-A6p">
-                    <rect key="frame" x="164" y="411" width="140" height="40"/>
+                    <rect key="frame" x="139" y="411" width="165" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="140" id="GqG-Yo-2fL"/>
+                        <constraint firstAttribute="width" constant="165" id="GqG-Yo-2fL"/>
                         <constraint firstAttribute="height" constant="40" id="ldA-xy-fIG"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="39"/>
+                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="45"/>
                     <color key="textColor" red="0.03505099565" green="0.27672275899999998" blue="0.50933241839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78K-DI-XHQ">
                     <rect key="frame" x="69.5" y="57" width="24" height="38"/>

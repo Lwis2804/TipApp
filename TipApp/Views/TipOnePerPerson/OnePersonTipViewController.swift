@@ -43,6 +43,8 @@ class OnePersonTipViewController: UIViewController {
         let font = UIFont.systemFont(ofSize: 25)
         segmentedControlPorcentaje.setTitleTextAttributes([NSAttributedString.Key.font: font],
                                                 for: .normal)
+       
+        
     }
     
     
